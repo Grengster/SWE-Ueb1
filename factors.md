@@ -9,4 +9,5 @@ The following factors have been fulfilled in this application:
 
 4. Backing Services:  As a simple backing service, we use a Postgres Database 
 
-6. Processes:         Since this app is an Web Application, the calling thread is blocked until host shutdown, which would be the closing of the local Webpage. 
+6. Processes:         Since this app is an Web Application, the calling thread is blocked until host shutdown, which would be the closing of the local Webpage and 
+                      since it is stateless, instances can be added and removed.

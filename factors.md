@@ -4,4 +4,4 @@ The following factors have been fulfilled in this application:
 
 2.Dependencies: The dependencies and frameworks used for the project are stored in the .csproj file which is used to open the project itself.
                 It contains data like: 
-                [//]: # (<PackageReference Include="Npgsql" Version="6.0.7" />)
+                [//]: # (PackageReference Include="Npgsql" Version="6.0.7")

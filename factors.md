@@ -16,3 +16,6 @@ The following factors have been fulfilled in this application:
                       bound to other ports.
                       
 9. Disposability:     This app has simple execute and shutdown methods which are straightforward and used in the most minimalistic manner possible.
+
+11. Logs:             For logging I used the Microsoft Interface called ILogger. Logging is used to store data in cases of errors, crashes and conflicts to determine 
+                      possible causes or store data for customers with specialized wishes.

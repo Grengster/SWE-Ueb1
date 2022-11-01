@@ -11,3 +11,8 @@ The following factors have been fulfilled in this application:
 
 6. Processes:         Since this app is an Web Application, the calling thread is blocked until host shutdown, which would be the closing of the local Webpage and 
                       since it is stateless, instances can be added and removed.
+                      
+7. Port Binding:      This app runs on docker containers and is using the default port 5432, if multiple databases or services would be used, more ports would need to be
+                      bound to other ports.
+                      
+9. Disposability:     This app has simple execute and shutdown methods which are straightforward and used in the most minimalistic manner possible.

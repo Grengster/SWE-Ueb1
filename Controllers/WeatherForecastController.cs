@@ -14,7 +14,6 @@ namespace SWE.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
-        private readonly Database _database;
 
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
@@ -25,6 +24,7 @@ namespace SWE.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.Log(LogLevel.Information, "Data is getting created");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
